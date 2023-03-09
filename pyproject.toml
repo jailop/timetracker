@@ -1,0 +1,25 @@
+[project]
+name = "timetracker"
+version = "0.0.1"
+dependencies = [
+]
+
+[tool.setuptools]
+package-dir={"" = "src"}
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project.scripts]
+timetracker = "timetracker:start_tracking"
+
+[project.gui-scripts]
+
+[project.optional-dependencies]
+devel = [
+    "pylint",
+    "pytest",
+    "pdoc",
+    "ipython",
+]
